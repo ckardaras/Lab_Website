@@ -1,0 +1,140 @@
+<!-- Registration Page -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Register Page</title>
+	<link rel='icon' href='../resources/img/favicon.ico' type='image/x-icon'/>
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="../resources/css/my_style.css" rel="stylesheet">
+  </head>
+  <body>
+	
+	<img src="../resources/img/beproudcapaabanner.jpg" class="img-fluid" alt="Registration Page Banner for CU Football">
+    <br>
+	<br>
+	<div class="container">
+		<form action="home.html" method="post">
+            <div class="form-group row">
+                <div class="col-2">
+                    <label for="name">Full Name</label>
+                </div>
+                <div class="col-10">
+                    <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-10">
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We will never share your email with anybody</small>
+                </div>
+            </div>
+            <div class="form-group row ">
+                <div class="col-2">
+                    <label for="password">Password</label>
+                </div>
+                <div class="col-10">
+                    <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+                </div>    
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label for="password-conf">Confirm Password</label>
+                </div>
+                <div class="col-10">
+                <input type="password" class="form-control" id="password-conf" placeholder="Password" name="password-conf">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                <label>Alumni</label>
+                </div>
+                <div class="col-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="alumni-yes" id="alumni-yes" value="yes">
+                  <label class="form-check-label" for="alumni-yes">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="alumni-no" id="alumni-no" value="no">
+                  <label class="form-check-label" for="alumni-no">
+                    No
+                  </label>
+                </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                <label>CU Boulder Student</label>
+                </div>
+                <div class="col-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="student-yes" id="student-yes" value="yes">
+                  <label class="form-check-label" for="student-yes">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="student-no" id="student-no" value="no">
+                  <label class="form-check-label" for="student-no">
+                    No
+                  </label>
+                </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                <label>Student Status</label>
+                </div>
+                <div class="col-10">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="undergrad" id="undergrad" value="undergrad">
+                  <label class="form-check-label" for="undergrad">
+                    Undergrad
+                  </label>
+                </div>
+                    <select class="form-control" style="display: block; width: 75%;" name="select_undergrad">
+                        <option selected class="text-muted">Select Student Status</option>
+                        <option value="MA">Freshman</option>
+                        <option value="MBA">Sophmore</option>
+                        <option value="PhD">Junior</option>
+                        <option value="PhD">Senior</option>
+                    </select>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="grad" id="grad" value="grad">
+                  <label class="form-check-label" for="grad">
+                    Grad
+                  </label>
+                </div>
+                    <select class="form-control" style="display: block; width: 75%;" name="select-grad">
+                        <option selected>Pick an Option</option>
+                        <option value="MA">MA</option>
+                        <option value="MBA">MBA</option>
+                        <option value="PhD">PhD</option>
+                    </select>
+                </div>
+            </div>
+			<!--
+					8. CU Boulder Undergrad/Grad Radio Button
+					9. Undergraduate Select (Freshman-Senior)
+					10. Graduate Select (MA, MBA, PhD)
+					11. Submit Button (links to home page)
+
+			-->
+            <div class="row form-group">
+			 <input type="submit" value="Submit" class="btn btn-primary btn-block">
+            </div>
+		</form>
+	</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
